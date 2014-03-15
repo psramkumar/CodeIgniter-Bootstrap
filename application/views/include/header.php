@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="">
-   <meta name="keywords" content="">
-   <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?php echo $description; ?>">
+    <meta name="keywords" content="<?php echo $keywords; ?>">
+    <meta name="author" content="<?php echo $author; ?>">
 
-   <title>CodeIgniter Bootstrap</title>
+    <title><?php echo $title; ?></title>
 
-   <link href="<?php echo base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
-   <link href="<?php echo base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
-   <link href="<?php echo base_url('assets/css/custom.css') ?>" rel="stylesheet">
+    <?php $statics = getIncludes(); ?>
+    <?php foreach ($statics['css'] as $css): ?>
+        <link rel="stylesheet" href="<?php echo $css ?>">
+    <?php endforeach; ?>
+    <?php if (isset($overcss)) { ?>
+        <?php if (isset($overcss['css']) && sizeof($overcss['css']) > 0) { ?>
+            <?php foreach ($overcss['css'] as $c): ?>
+                <link rel="stylesheet" href="<?php echo $c ?>">
+            <?php endforeach; ?>
+        <?php } ?>
 
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-   <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/1.3.1/lodash.min.js"></script>
-   <script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
-   <script src="<?php echo base_url('assets/js/custom.js') ?>"></script>
+        <?php if (isset($overcss['css9']) && sizeof($overcss['css9']) > 0) { ?>
+            <?php foreach ($overcss['css9'] as $c9): ?>
+                <!--[if lt IE 9]>
+                <link rel="stylesheet" href="<?php echo $c9 ?>"><![endif]-->
+            <?php endforeach; ?>
+        <?php } ?>
+    <?php } ?>
+
 </head>
 <body>

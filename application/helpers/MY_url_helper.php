@@ -14,13 +14,13 @@
  */
 function base_url($uri = null)
 {
-   $CI =& get_instance();
+    $CI =& get_instance();
 
-   $cdn = $CI->config->item('cdn_url');
-   if (!empty($cdn))
-      return $cdn . $uri;
+    $cdn = $CI->config->item('cdn_url');
+    if (!empty($cdn))
+        return $cdn . $uri;
 
-   return $CI->config->base_url($uri);
+    return $CI->config->base_url($uri);
 }
 
 /*
@@ -38,31 +38,29 @@ function base_url($uri = null)
  */
 function is_active($input_params = "")
 {
-   // uri_string is a CodeIgniter function
-   $uri_string = uri_string();
+    // uri_string is a CodeIgniter function
+    $uri_string = uri_string();
+    // direct matching, faster than looping.
+    if ($uri_string == $input_params)
+        return true;
 
-   // direct matching, faster than looping.
-   if ($uri_string == $input_params)
-      return true;
-      
-   $uri_params = preg_split("/\//", $uri_string);
-   $input_params = preg_split("/\//", $input_params);
+    $uri_params = preg_split("/\//", $uri_string);
+    $input_params = preg_split("/\//", $input_params);
 
-   $prev_key = -1;
-   foreach ($input_params as $param)
-   {
-      $curr_key = array_search($param, $uri_params);
+    $prev_key = -1;
+    foreach ($input_params as $param) {
+        $curr_key = array_search($param, $uri_params);
 
-      // if it doesn't exist, return null
-      if ($curr_key === FALSE)
-         return false;
+        // if it doesn't exist, return null
+        if ($curr_key === FALSE)
+            return false;
 
-      // this makes us order sensitive
-      if ($curr_key < $prev_key)
-         return false;
+        // this makes us order sensitive
+        if ($curr_key < $prev_key)
+            return false;
 
-      $prev_key = $curr_key;
-   }
+        $prev_key = $curr_key;
+    }
 
-   return true;
+    return true;
 }

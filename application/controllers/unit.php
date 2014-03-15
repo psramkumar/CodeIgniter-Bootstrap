@@ -22,8 +22,11 @@ class Unit extends CI_Controller
       $data['tests'] = $this->unit->result();
       $data['count'] = count($data['tests']);
       $data['failed'] = $this->unit_model->count_failed_tests($data['tests']);
-
-      $this->load->view('include/header');
+      $data['title'] = 'test';
+      $data['description'] = 'test';
+      $data['keywords'] = 'test';
+      $data['author'] = 'test';
+      $this->load->view('include/header', $data);
       $this->load->view('templates/unit', $data);
       $this->load->view('include/footer');
    }
