@@ -1,0 +1,26 @@
+<?xml version="1.0"?><svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>RED SQUARE BUTTON</title>
+ <defs>
+  <filter id="filter3874" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="13.735156" id="feGaussianBlur3876"/>
+  </filter>
+  <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3882">
+   <path d="m127.03125,0c-70.168461,0 -127.03125,56.862789 -127.03125,127.03125l0,295.34375c0,70.168457 56.862789,127.03125 127.03125,127.03125l295.34375,0c70.168457,0 127.03125,-56.862793 127.03125,-127.03125l0,-295.34375c0,-70.168461 -56.862793,-127.03125 -127.03125,-127.03125l-295.34375,0z" id="path3884" stroke-width="20" fill="none"/>
+  </clipPath>
+  <linearGradient id="linearGradient3852">
+   <stop offset="0" id="stop3854" stop-color="#dbe3db"/>
+   <stop offset="1" id="stop3856" stop-opacity="0" stop-color="#dbe3db"/>
+  </linearGradient>
+  <linearGradient xlink:href="#linearGradient3852" id="linearGradient3858" x1="0.528223" y1="-0.083138" x2="0.529192" y2="1.375566"/>
+  <linearGradient xlink:href="#linearGradient3852" id="linearGradient3864" x1="0.31873" y1="1.242559" x2="0.333011" y2="0.080507"/>
+ </defs>
+ <metadata id="metadata7">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <path id="path3872" d="m126.03125,-1c-70.168461,0 -127.03125,56.862789 -127.03125,127.03125l0,295.34375c0,70.168457 56.862789,127.03125 127.03125,127.03125l295.34375,0c70.168457,0 127.03125,-56.862793 127.03125,-127.03125l0,-295.34375c0,-70.168461 -56.862793,-127.03125 -127.03125,-127.03125l-295.34375,0z" clip-path="url(#clipPath3882)" filter="url(#filter3874)" stroke-miterlimit="4" stroke-width="20" stroke="#000000" fill="#7f007f"/>
+  <g id="svg_2" opacity="0.75">
+   <path d="m127.234001,25.6873c-56.374603,0 -101.343601,44.968897 -101.343601,101.343699l0,32.187996c49.813999,6.361008 73.267002,25.777008 123.312603,29.781006c71.427994,5.714005 97.128998,5.718994 162.842987,-17.139008c65.714996,-22.856995 -14.272003,-62.869995 197.157013,-54.298996c4.830017,0.196007 9.593018,0.257004 14.312012,0.407005c-4.519043,-52.055702 -47.619019,-92.281702 -100.937012,-92.281702l-295.344002,0l0,0l0,0z" id="path3862" stroke-width="1.624" fill-rule="nonzero" fill="url(#linearGradient3858)"/>
+   <path d="m514.453125,454.875c-12.825745,-0.056519 -21.857178,5.379456 -65.25,19.84375c-77.142853,25.714294 -200.008942,34.285706 -211.4375,20c-11.428558,-14.285706 -68.571411,-22.852661 -119.999992,-14.28125c-29.943901,4.990662 -17.265053,22.561523 -33.03125,34.125c12.894966,5.892883 27.282799,9.15625 42.5,9.15625l295.343742,0c44.913391,0 82.600098,-28.543213 96.0625,-68.65625c-1.462463,-0.120972 -2.850525,-0.18158 -4.1875,-0.1875z" id="path3079" stroke-width="1.624" fill-rule="nonzero" fill="url(#linearGradient3864)"/>
+  </g>
+ </g>
+</svg>

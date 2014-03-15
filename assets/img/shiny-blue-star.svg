@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200"
+   height="200"
+   id="svg11169"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="stern_star.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs11171">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 100 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="200 : 100 : 1"
+       inkscape:persp3d-origin="100 : 66.666667 : 1"
+       id="perspective10270" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11113">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop11115" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop11117" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11113"
+       id="linearGradient11167"
+       gradientUnits="userSpaceOnUse"
+       x1="-346.22461"
+       y1="81.677124"
+       x2="-352.23099"
+       y2="189.36285" />
+    <linearGradient
+       id="linearGradient11050">
+      <stop
+         style="stop-color:#2c4f80;stop-opacity:1;"
+         offset="0"
+         id="stop11052" />
+      <stop
+         id="stop11060"
+         offset="0.83974361"
+         style="stop-color:#001129;stop-opacity:1;" />
+      <stop
+         style="stop-color:#2c4f80;stop-opacity:1;"
+         offset="1"
+         id="stop11054" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11050"
+       id="linearGradient11165"
+       gradientUnits="userSpaceOnUse"
+       x1="407.11435"
+       y1="21.551407"
+       x2="407.11435"
+       y2="107.32928" />
+    <filter
+       inkscape:collect="always"
+       id="filter130884"
+       x="-0.11847505"
+       width="1.2369502"
+       y="-0.11683056"
+       height="1.2336611">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="5.0034915"
+         id="feGaussianBlur130886" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11050"
+       id="linearGradient11212"
+       gradientUnits="userSpaceOnUse"
+       x1="407.11435"
+       y1="21.551407"
+       x2="407.11435"
+       y2="107.32928" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11113"
+       id="linearGradient11214"
+       gradientUnits="userSpaceOnUse"
+       x1="-346.22461"
+       y1="81.677124"
+       x2="-352.23099"
+       y2="189.36285" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.171627"
+     inkscape:cx="120.41136"
+     inkscape:cy="170.4351"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="1004"
+     inkscape:window-x="0"
+     inkscape:window-y="46" />
+  <metadata
+     id="metadata11174">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Shiny Star</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Kai Rusch</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Button Stern Star Glas Plastik Shadow Schatten</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g11207"
+       transform="translate(-153.63251,-262.02878)">
+      <path
+         id="path11149"
+         d="M 269.69414,273.70743 L 263.88164,284.48868 L 268.22539,317.76993 L 275.10039,315.05118 L 269.69414,273.70743 z M 208.53789,284.01993 L 208.88164,285.67618 L 237.75664,312.17618 L 238.22539,311.26993 L 208.53789,284.01993 z M 323.16289,305.11368 L 307.31914,311.42618 L 287.97539,341.67618 L 297.75664,344.89493 L 323.16289,305.11368 z M 330.72539,359.17618 L 287.75664,372.67618 L 314.28789,415.64493 L 267.63164,396.26993 L 261.41289,438.89493 L 268.35039,452.23868 L 275.63164,402.26993 L 322.28789,421.64493 L 295.75664,378.67618 L 343.91289,363.55118 L 330.72539,359.17618 z M 210.35039,385.73868 L 176.31914,386.73868 L 167.85039,393.20743 L 208.94414,392.01993 L 210.35039,385.73868 z M 237.06914,401.42618 L 211.00664,424.64493 L 207.35039,441.01993 L 241.72539,410.39493 L 237.06914,401.42618 z"
+         style="opacity:0.83112584;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.77165353;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter130884)" />
+      <path
+         sodipodi:type="star"
+         style="fill:url(#linearGradient11212);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.77165353;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path11151"
+         sodipodi:sides="9"
+         sodipodi:cx="405.60818"
+         sodipodi:cy="72.875237"
+         sodipodi:r1="52.186584"
+         sodipodi:r2="26.093292"
+         sodipodi:arg1="-2.7849725"
+         sodipodi:arg2="-2.4359066"
+         inkscape:flatsided="false"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="M 356.70507,54.656428 L 385.74684,55.95227 L 379.85705,27.484503 L 401.27138,47.144864 L 415.05827,21.551407 L 418.82517,50.376985 L 445.83769,39.633301 L 430.19458,64.136288 L 457.79328,73.269466 L 430.05974,81.984642 L 445.33088,106.72117 L 418.48375,95.570604 L 414.28179,124.33598 L 400.88314,98.537151 L 379.17422,117.87174 L 385.49343,89.496203 L 356.4354,90.353136 L 379.51564,72.67812 L 356.70507,54.656428 z"
+         transform="matrix(1.7369967,0,0,1.7369967,-454.46857,232.19383)" />
+      <path
+         sodipodi:type="inkscape:offset"
+         inkscape:radius="5.8353953"
+         inkscape:original="M -337.5625 101.40625 L -350.5 125.40625 C -351.59684 127.43904 -353.56619 128.86531 -355.84375 129.25 C -358.12131 129.63467 -360.45262 128.93479 -362.15625 127.375 L -382.21875 108.9375 L -376.71875 135.59375 C -376.24018 137.86479 -376.83937 140.23266 -378.34375 142 C -379.84813 143.76734 -382.08793 144.7347 -384.40625 144.625 L -411.59375 143.40625 L -390.21875 160.3125 C -389.43412 160.94713 -388.78574 161.73368 -388.3125 162.625 C -369.54736 165.83937 -349.10544 167.71875 -327.5625 167.71875 C -313.79979 167.71875 -300.46683 166.92985 -287.71875 165.5625 L -309.1875 158.46875 C -311.38676 157.74435 -313.13018 156.05656 -313.90625 153.875 C -314.68232 151.69344 -314.40389 149.26311 -313.15625 147.3125 L -298.5 124.34375 L -323.8125 134.4375 C -325.96443 135.29917 -328.40732 135.11118 -330.40625 133.9375 C -332.40518 132.76381 -333.73515 130.73654 -334.03125 128.4375 L -337.5625 101.40625 z "
+         style="fill:url(#linearGradient11214);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.77165353;stroke-miterlimit:4;stroke-opacity:1"
+         id="path11163"
+         d="M -337.3125,95.5625 C -339.54235,95.471656 -341.62876,96.660427 -342.6875,98.625 L -355.625,122.625 C -355.87739,123.09275 -356.32579,123.41779 -356.8125,123.5 C -357.29922,123.58221 -357.8295,123.41889 -358.21875,123.0625 L -378.28125,104.65625 C -380.14616,102.95206 -382.89583,102.64128 -385.09406,103.88623 C -387.29229,105.13119 -388.43992,107.64917 -387.9375,110.125 L -382.4375,136.78125 C -382.43753,136.79167 -382.43753,136.80208 -382.4375,136.8125 C -382.33033,137.32109 -382.44867,137.82804 -382.78125,138.21875 C -383.11382,138.60946 -383.60178,138.80601 -384.125,138.78125 C -384.13542,138.78122 -384.14583,138.78122 -384.15625,138.78125 L -411.34375,137.5625 C -413.87184,137.45294 -416.1825,138.98508 -417.06554,141.35646 C -417.94857,143.72785 -417.20278,146.39812 -415.21875,147.96875 L -393.84375,164.875 C -393.66997,165.01556 -393.57353,165.17764 -393.46875,165.375 C -392.62013,166.96246 -391.08644,168.06949 -389.3125,168.375 C -370.22533,171.64453 -349.44482,173.5625 -327.5625,173.5625 C -313.57679,173.5625 -300.03417,172.76298 -287.09375,171.375 C -284.3606,171.08522 -282.20007,168.9277 -281.90647,166.19497 C -281.61287,163.46223 -283.26579,160.895 -285.875,160.03125 L -307.34375,152.9375 C -307.85526,152.76902 -308.23659,152.38317 -308.40625,151.90625 C -308.57591,151.42932 -308.5245,150.89791 -308.25,150.46875 C -308.24997,150.45833 -308.24997,150.44792 -308.25,150.4375 L -293.59375,127.46875 C -292.26262,125.33691 -292.44584,122.59229 -294.04853,120.6563 C -295.65121,118.72031 -298.31335,118.02784 -300.65625,118.9375 L -325.96875,129.03125 C -326.43399,129.21754 -326.99405,129.16663 -327.4375,128.90625 C -327.88096,128.64587 -328.18117,128.22196 -328.25,127.6875 L -331.78125,100.65625 C -332.13972,97.838516 -334.47483,95.688104 -337.3125,95.5625 L -337.3125,95.5625 z"
+         transform="translate(599.63193,192.24304)" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PHP Gallery</title>
+    <link href="http://localhost/phpimagegallery/Sample.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<div id="Common">
+    <div id="CommonBody" align="center">
+
+        <script type='text/javascript'>var GalleryAjaxData = {Controls: [
+            {ClientID: 'PhpGalleryControl', UniqueID: 'PhpGalleryControl', Methods: [
+                {Name: 'DeletePhotoComment', ParameterCount: 3},
+                {Name: 'DeleteCategoryComment', ParameterCount: 2},
+                {Name: 'AddPhotoComment', ParameterCount: 4},
+                {Name: 'AddCategoryComment', ParameterCount: 3},
+                {Name: 'GetCategoryData', ParameterCount: 1},
+                {Name: 'GetAllCategoryData', ParameterCount: 0},
+                {Name: 'UpdatePhoto', ParameterCount: 4},
+                {Name: 'UpdateCategory', ParameterCount: 2},
+                {Name: 'DeletePhoto', ParameterCount: 2},
+                {Name: 'DeleteCategory', ParameterCount: 1},
+                {Name: 'CreateCategory', ParameterCount: 1},
+                {Name: 'UploadFiles', ParameterCount: 1}
+            ]}
+        ]};</script>
+        <script type='text/javascript' charset='UTF-8' src='http://localhost/phpimagegallery/phpgallery/resources/Core/GalleryAjax.js'></script>
+        <script type='text/javascript' charset='UTF-8' src='http://localhost/phpimagegallery/phpgallery/resources/Core/GalleryLibrary.js'></script>
+        <script type='text/javascript' charset='UTF-8' src='http://localhost/phpimagegallery/phpgallery/resources/Share/LibraryExt.js'></script>
+        <script type='text/javascript' charset='UTF-8' src='http://localhost/phpimagegallery/phpgallery/resources/Core/GalleryMenu.js'></script>
+        <script type='text/javascript' charset='UTF-8' src='http://localhost/phpimagegallery/phpgallery/resources/Core/GalleryBrowser.js'></script>
+        <script type='text/javascript' charset='UTF-8' src='http://localhost/phpimagegallery/phpgallery/resources/Layout/SlideShow/Code.js'></script>
+        <script type='text/javascript' charset='UTF-8' src='http://localhost/phpimagegallery/phpgallery/resources/Slider/NewWin/Code.js'></script>
+        <script type='text/javascript' charset='UTF-8' src='http://localhost/phpimagegallery/phpgallery/resources/Viewer/LightBox/Code.js'></script>
+        <script type='text/javascript' charset='UTF-8' src='http://localhost/phpimagegallery/phpgallery/resources/Popup/Default/Code.js'></script>
+        <script type='text/javascript' charset='UTF-8' src='http://localhost/phpimagegallery/phpgallery/resources/Theme/Classic/Code.js'></script>
+        <script type='text/javascript' charset='UTF-8' src='http://localhost/phpimagegallery/phpgallery/resources/Editor/Explorer/Code.js'></script>
+        <link rel='stylesheet' href='http://localhost/phpimagegallery/phpgallery/resources/Gallery.css'/>
+        <link rel='stylesheet' href='http://localhost/phpimagegallery/phpgallery/resources/Layout/SlideShow/Style.css'/>
+
+        <div id='PhpGalleryControl' style='width:800px;height:480px;'>
+            <!--Start Layout Template 'SlideShow'-->
+            <div id='dng_container' class="GalleryLayout" style="background-color:#666666;border:solid 1px #666666;width:100%;height:100%;position:relative;">
+                <div id="dng_photo1" style='position:absolute;top:0px;left:0px;width:100%;text-align:center;background-color:#666666;'>
+                </div>
+                <div id="dng_photo2" style='position:absolute;top:0px;left:0px;width:100%;text-align:center;background-color:#666666;'>
+                </div>
+                <div id="dng_topinfo" style='position:absolute;top:0px;left:0px;width:100%;height:48px;background-color:#666666;display:none'>
+                    <div style="text-align:left;height:24px;background-color:#000000">
+                        <div id="dng_topinfoindex" style="padding:4px">Name</div>
+                    </div>
+                    <div style="text-align:left;height:24px;background-color:#333333">
+                        <div id="dng_topinfoname" style="padding:4px">Index</div>
+                    </div>
+                </div>
+                <table id="dng_toolbar" border="0" cellspacing="0" cellpadding="0" style='position:absolute;left:0px;bottom:0px;width:100%;height:30px;background-color:#333333;'>
+                    <tr>
+                        <td style='width:60px;text-align:right;vertical-align:middle;'>
+                            <img class='BlackSliderButton' id="dng_btn_config" style='width:16px;height:16px'/>
+                            <img class='BlackSliderButton' id='dng_btn_prev' style='width:16px;height:16px'/>
+                        </td>
+                        <td style='background-color:black;border:solid 3px #333333;' id='dng_tabcontainer'></td>
+                        <td style='width:90px;vertical-align:middle;'>
+                            <img class='BlackSliderButton' id="dng_btn_next" style='width:16px;height:16px'/>
+                            <img class='BlackSliderButton' id="dng_btn_play" style='width:16px;height:16px'/>
+                            <img class="BlackSliderButton" id="dng_btn_slider" style='width:16px;height:16px' onclick="GalleryBrowser.Execute(this,'ShowSlider');return false;"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--End Template-->
+        </div>
+        <script type='text/javascript'>
+            var thegallerybrowser = new GalleryBrowser(
+                    {ClientID: 'PhpGalleryControl',
+                        UniqueID: 'PhpGalleryControl',
+                        UploaderContainerID: 'PhpGalleryControl_UploaderContainer',
+                        UploaderClientID: 'AjaxUploaderFiles',
+                        UploaderUniqueID: 'AjaxUploaderFiles',
+                        Folder: 'http://localhost/phpimagegallery/phpgallery/resources/',
+                        LoadHandler: 'load.php',
+                        Theme: 'Classic', Culture: 'en',
+                        Layout: 'SlideShow', Slider: 'NewWin',
+                        Viewer: 'LightBox', Popup: 'Default',
+                        Editor: 'Explorer', LogonUserID: 'username@server.com',
+                        LogonUserName: 'UserName', AllowEdit: 1,
+                        AllowPostComment: 1, AllowShowComment: 1,
+                        ScriptOption: {},
+                        Categories: [
+                            {'CategoryID': null, 'Photos': [
+                                {'CategoryID': null, 'PhotoID': '0.jpg', 'Title': '0.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '268463', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/0.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/0.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '1.jpg', 'Title': '1.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '385465', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/1.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/1.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '10.jpg', 'Title': '10.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '138096', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/10.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/10.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '11.jpg', 'Title': '11.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '243848', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/11.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/11.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '12.jpg', 'Title': '12.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '157753', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/12.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/12.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '13.jpg', 'Title': '13.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '153397', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/13.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/13.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '14.jpg', 'Title': '14.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '181134', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/14.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/14.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '15.jpg', 'Title': '15.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '146830', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/15.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/15.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '16.jpg', 'Title': '16.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '157977', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/16.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/16.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '17.jpg', 'Title': '17.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '259490', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/17.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/17.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '18.jpg', 'Title': '18.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '299125', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/18.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/18.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '19.jpg', 'Title': '19.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '92343', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/19.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/19.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '2.jpg', 'Title': '2.jpg', 'Comment': '', 'Width': '720', 'Height': '388', 'Size': '443795', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/2.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/2.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '20.jpg', 'Title': '20.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '49732', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/20.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/20.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '3.jpg', 'Title': '3.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '154007', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/3.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/3.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '4.jpg', 'Title': '4.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '231222', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/4.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/4.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '5.jpg', 'Title': '5.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '170202', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/5.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/5.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '7.jpg', 'Title': '7.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '221101', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/7.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/7.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '8.jpg', 'Title': '8.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '313756', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/8.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/8.thumbnail.jpg', 'Comments': []},
+                                {'CategoryID': null, 'PhotoID': '9.jpg', 'Title': '9.jpg', 'Comment': '', 'Width': '720', 'Height': '400', 'Size': '355599', 'Time': new Date(1378949068000), 'Url': 'http://localhost/phpimagegallery/defaultalbum/9.jpg', 'Thumbnail': 'http://localhost/phpimagegallery/defaultalbum/9.thumbnail.jpg', 'Comments': []}
+                                ],
+                            'Comments': []}
+        ]})</script>
+    </div>
+</div>
+
+</body>
+</html>
+
+
